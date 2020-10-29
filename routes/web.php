@@ -13,24 +13,3 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/', 
-[App\Http\Controllers\bookController::class, 'index'
-]);
-
-Route::get('/{id}', 
-[App\Http\Controllers\bookController::class, 'show'
-]);
-
-Route::post('/', 
-[App\Http\Controllers\bookController::class, 'store'
-]);
-Route::patch('/{id}', 
-[App\Http\Controllers\bookController::class, 'update'
-]);
-Route::delete('/{id}', 
-[App\Http\Controllers\bookController::class, 'destroy'
-]);
