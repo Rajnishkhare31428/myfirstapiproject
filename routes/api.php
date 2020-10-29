@@ -22,21 +22,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 
 [App\Http\Controllers\bookController::class, 'index'
-]);
+])->middleware('cors');
 
 Route::get('/{id}', 
 [App\Http\Controllers\bookController::class, 'show'
-]);
+])->middleware('cors');
 
 Route::post('/', 
 [App\Http\Controllers\bookController::class, 'store'
-]);
+])->middleware('cors');
 Route::put('/{id}', 
 [App\Http\Controllers\bookController::class, 'update'
-]);
+])->middleware('cors');
 Route::delete('/{id}', 
 [App\Http\Controllers\bookController::class, 'destroy'
-]);
+])->middleware('cors');
 
 // Route::post('');
 // Route::put('');
